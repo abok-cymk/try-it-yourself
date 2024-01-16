@@ -7,7 +7,7 @@
 body {
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.1;
     background-color: aliceblue;
 }
 
@@ -46,4 +46,25 @@ body {
 .grids:nth-of-type(3) {
     background: rgb(2, 2, 33);
     grid-column: 2 / 4;
+    grid-row: 2/ 5;
+}
+.grids:nth-of-type(4) {
+    background: rgb(9, 85, 52);
+    grid-column: 4 / 5;
+    grid-row: 2/ 5;
+}
+
+@media (max-width: 500px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .grids:nth-of-type(5) {
+        grid-column: 1/5;
+        grid-row: 1 / 5;
+    }
+    .grids:nth-of-type(2) {
+        grid-column: 2 / 6;
+        
+    }
 }
